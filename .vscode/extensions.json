@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "ms-python.black-formatter",
+    "editorconfig.editorconfig",
+    "ms-python.flake8",
+    "ms-python.isort",
+    "ms-python.mypy-type-checker",
+    "ms-python.vscode-pylance",
+    "ms-python.python",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "redhat.vscode-yaml",
+    "mikestead.dotenv",
+    "njpwerner.autodocstring",
+    "kevinrose.vsc-python-indent",
+    "tamasfe.even-better-toml"
+  ]
+}

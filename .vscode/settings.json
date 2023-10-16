@@ -1,0 +1,96 @@
+{
+  /* 最低限設定したいWorkspace設定 */
+  "extensions.ignoreRecommendations": false,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "files.encoding": "utf8",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "[markdown]": {
+    "editor.tabSize": 3,
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "vscode.markdown-language-features",
+  },
+  // Extension: Markdown All in One
+  "markdown.extension.list.indentationSize": "inherit",
+  "markdown.extension.toc.levels": "2..6",
+  "markdown.extension.toc.slugifyMode": "github",
+  // Extension: markdownlint
+  "markdownlint.config": {
+    "MD007": {
+      "indent": 3
+    },
+    "MD033": false // インラインHTMLの制限を解除
+  },
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml", // Extension: YAML
+  },
+  "yaml.format.printWidth": 119,
+  "yaml.format.singleQuote": true,
+  "[dockerfile][dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker", // Extension: Docker
+  },
+  "[log]": {
+    "editor.formatOnSave": false,
+  },
+  "[csv]": {
+    "editor.formatOnSave": false,
+  },
+  // Extension: Code Spell Checker
+  "cSpell.words": [
+    "azuretools",
+    "dockercompose",
+    "virtualenvs"
+  ],
+  /* Python */
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.black-formatter", // Extension: Black
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true // Extension: isort
+    }
+  },
+  // Extension: Python
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.languageServer": "Pylance",
+  "python.testing.pytestEnabled": true,
+  // Extension: Pylance
+  "python.analysis.addImport.exactMatchOnly": false,
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.indexing": true,
+  "python.analysis.userFileIndexingLimit": 2000,
+  "python.analysis.autoImportCompletions": true, // 特定条件下でimportを自動追加
+  "python.analysis.importFormat": "absolute",
+  "python.analysis.completeFunctionParens": true, // 関数宣言時に()を自動追加
+  "python.analysis.inlayHints.variableTypes": true, // 型アノテーション系のヒント
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.callArgumentNames": "off",
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.enablePytestSupport": true, // pytestのfixtureサポート
+  "python.analysis.autoFormatStrings": true, // {の入力によりf文字列に自動成形
+  "python.analysis.fixAll": [
+    "source.convertImportFormat",
+    "source.unusedImports"
+  ],
+  // Extension: Black
+  "black-formatter.importStrategy": "fromEnvironment",
+  // Extension: flake8
+  "flake8.importStrategy": "fromEnvironment",
+  // Extension: isort
+  "isort.importStrategy": "fromEnvironment",
+  // Extension: mypy
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  /* TOML */
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+}
