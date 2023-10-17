@@ -51,9 +51,9 @@
   /* Python */
   "[python]": {
     "editor.tabSize": 4,
-    "editor.defaultFormatter": "ms-python.black-formatter", // Extension: Black
+    // "editor.defaultFormatter": "ms-python.black-formatter", // Extension: Black
     "editor.codeActionsOnSave": {
-      "source.fixAll": true,
+      "source.fixAll": true, // Extension: Pylance
       "source.organizeImports": true // Extension: isort
     }
   },
@@ -65,30 +65,27 @@
   "python.analysis.addImport.exactMatchOnly": false,
   "python.analysis.typeCheckingMode": "off",
   "python.analysis.diagnosticMode": "openFilesOnly",
-  "python.analysis.autoSearchPaths": true,
   "python.analysis.indexing": true,
   "python.analysis.userFileIndexingLimit": 2000,
-  "python.analysis.autoImportCompletions": true, // 特定条件下でimportを自動追加
   "python.analysis.importFormat": "absolute",
-  "python.analysis.completeFunctionParens": true, // 関数宣言時に()を自動追加
-  "python.analysis.inlayHints.variableTypes": true, // 型アノテーション系のヒント
-  "python.analysis.inlayHints.functionReturnTypes": true,
-  "python.analysis.inlayHints.callArgumentNames": "off",
-  "python.analysis.inlayHints.pytestParameters": true,
-  "python.analysis.enablePytestSupport": true, // pytestのfixtureサポート
-  "python.analysis.autoFormatStrings": true, // {の入力によりf文字列に自動成形
+  "python.analysis.enablePytestSupport": true,
   "python.analysis.fixAll": [
     "source.convertImportFormat",
     "source.unusedImports"
   ],
   // Extension: Black
   "black-formatter.importStrategy": "fromEnvironment",
+  "black-formatter.args": [],
   // Extension: flake8
   "flake8.importStrategy": "fromEnvironment",
+  "flake8.args": [],
   // Extension: isort
-  "isort.importStrategy": "fromEnvironment",
+  // "isort.importStrategy": "fromEnvironment",
+  "isort.args": [],
   // Extension: mypy
   "mypy-type-checker.importStrategy": "fromEnvironment",
+  "mypy-type-checker.args": [],
+  // "mypy-type-checker.preferDaemon": false,
   /* TOML */
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"
